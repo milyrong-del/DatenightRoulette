@@ -106,7 +106,7 @@ function showFinalResult() {
         });
 
         dress = 'Casual / smart casual (no Uniqlo tees)';
-        bring = 'Bug spray, picnic rug (if you have one)', 'food and water (optional)';
+        bring = 'Bug spray, picnic rug (if you have one), food and water (optional)';
     }
 
     // Show badminton image when badminton is selected
