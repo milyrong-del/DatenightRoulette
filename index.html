@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturday Date Night Options</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div id="app-container">
+        <div id="landing-page">
+            <img src="Icons/BeMineTT.png" alt="Be Mine" class="be-mine-img" />
+            <h1 id="landing-title">Hi Ethan, would you like to go on a date with Mily?</h1>
+            <h2>date: 07/03/2026</h2>
+            <div class="btn-container">
+                <button id="yes-btn">Yes</button>
+                <button id="no-btn">No</button>
+            </div>
+        </div>
+        
+        <div id="question-box" class="hidden">
+            <h1 id="step-counter">Step 1</h1>
+            <img id="scene-image" src="" alt="Scene" class="scene-image hidden" />
+            <h2 id="question-text">set the scene</h2>
+            <div class="btn-container" id="options">
+                </div>
+            <button id="back-btn" class="nav-btn hidden" aria-label="Go back">←</button>
+        </div>
+        
+        <div id="result-screen" class="hidden">
+            <img id="crybaby" src="Icons/Crybaby.png" alt="Crybaby" class="crybaby hidden" />
+            <img id="result-image" src="" alt="Result" class="result-image hidden" />
+
+            <p id="result-text"></p>
+            <div id="result-details" class="result-details hidden">
+                <p><strong>Dress code:</strong> <span id="dress-code"></span></p>
+                <p><strong>What to bring:</strong> <span id="bring-list"></span></p>
+            </div>
+            <button class="reset-btn" onclick="location.reload()">choose again</button>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
